@@ -2,7 +2,7 @@ import os, tarfile, subprocess
 
 
 #USER DEFINED
-PASTELD_DIR = 'TO_BE_EDITED!!!!'
+PASTELD_DIR = '/home/martongy/pastel_ws/repos/pastel_original/pastel/src'
 
 #No need to modify
 ARCHIVE = './nodes.tar.gz'
@@ -27,7 +27,9 @@ CMD_LIST=[
 "{}/pasteld -datadir={}/node13 -daemon -keypool=1 -discover=0 -rest -debug=masternode,mnpayments,governance".format(PASTELD_DIR, EXTRACT_PATH_FULL),
 "{}/pasteld -datadir={}/node14 -daemon -keypool=1 -discover=0 -rest -debug=masternode,mnpayments,governance".format(PASTELD_DIR, EXTRACT_PATH_FULL),
 "{}/pasteld -datadir={}/node15 -daemon -keypool=1 -discover=0 -rest -debug=masternode,mnpayments,governance".format(PASTELD_DIR, EXTRACT_PATH_FULL),
-"{}/pasteld -datadir={}/node16 -daemon -keypool=1 -discover=0 -rest -debug=masternode,mnpayments,governance".format(PASTELD_DIR, EXTRACT_PATH_FULL)
+"{}/pasteld -datadir={}/node16 -daemon -keypool=1 -discover=0 -rest -debug=masternode,mnpayments,governance".format(PASTELD_DIR, EXTRACT_PATH_FULL),
+"{}/pasteld -datadir={}/node17 -daemon -keypool=1 -discover=0 -rest -debug=masternode,mnpayments,governance".format(PASTELD_DIR, EXTRACT_PATH_FULL),
+"{}/pasteld -datadir={}/node18 -daemon -keypool=1 -discover=0 -rest -debug=masternode,mnpayments,governance".format(PASTELD_DIR, EXTRACT_PATH_FULL)
 ]
 
 def extractArchive():
