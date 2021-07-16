@@ -2,7 +2,7 @@ import os, tarfile, subprocess
 
 
 #USER DEFINED
-PASTELD_DIR = 'TO_BE_EDITED!!'
+PASTELD_DIR = 'UPDATE ME!!!'
 
 #No need to modify
 ARCHIVE = './nodes.tar.gz'
@@ -24,12 +24,12 @@ CMD_LIST=[
 "{}/pasteld -datadir={}/node10 -daemon -keypool=1 -discover=0 -rest -debug=masternode,mnpayments,governance -masternode -txindex=1 -reindex -masternodeprivkey=91hruvJfyRFjo7JMKnAPqCXAMiJqecSfzn9vKWBck2bKJ9CCRuo".format(PASTELD_DIR, EXTRACT_PATH_FULL),
 "{}/pasteld -datadir={}/node11 -daemon -keypool=1 -discover=0 -rest -debug=masternode,mnpayments,governance -masternode -txindex=1 -reindex -masternodeprivkey=92sYv5JQHzn3UDU6sYe5kWdoSWEc6B98nyY5JN7FnTTreP8UNrq".format(PASTELD_DIR, EXTRACT_PATH_FULL),
 "{}/pasteld -datadir={}/node12 -daemon -keypool=1 -discover=0 -rest -debug=masternode,mnpayments,governance -masternode -txindex=1 -reindex -masternodeprivkey=92pfBHQaf5K2XBnFjhLaALjhCqV8Age3qUgJ8j8oDB5eESFErsM".format(PASTELD_DIR, EXTRACT_PATH_FULL),
-"{}/pasteld -datadir={}/node13 -daemon -keypool=1 -discover=0 -rest -debug=masternode,mnpayments,governance".format(PASTELD_DIR, EXTRACT_PATH_FULL),
-"{}/pasteld -datadir={}/node14 -daemon -keypool=1 -discover=0 -rest -debug=masternode,mnpayments,governance".format(PASTELD_DIR, EXTRACT_PATH_FULL),
-"{}/pasteld -datadir={}/node15 -daemon -keypool=1 -discover=0 -rest -debug=masternode,mnpayments,governance".format(PASTELD_DIR, EXTRACT_PATH_FULL),
-"{}/pasteld -datadir={}/node16 -daemon -keypool=1 -discover=0 -rest -debug=masternode,mnpayments,governance".format(PASTELD_DIR, EXTRACT_PATH_FULL),
-"{}/pasteld -datadir={}/node17 -daemon -keypool=1 -discover=0 -rest -debug=masternode,mnpayments,governance".format(PASTELD_DIR, EXTRACT_PATH_FULL),
-"{}/pasteld -datadir={}/node18 -daemon -keypool=1 -discover=0 -rest -debug=masternode,mnpayments,governance".format(PASTELD_DIR, EXTRACT_PATH_FULL)
+"{}/pasteld -datadir={}/node13 -daemon -keypool=1 -discover=0 -rest -debug=masternode,mnpayments,governance -txindex=1 -reindex -gen".format(PASTELD_DIR, EXTRACT_PATH_FULL),
+"{}/pasteld -datadir={}/node14 -daemon -keypool=1 -discover=0 -rest -debug=masternode,mnpayments,governance -txindex=1 -reindex".format(PASTELD_DIR, EXTRACT_PATH_FULL),
+"{}/pasteld -datadir={}/node15 -daemon -keypool=1 -discover=0 -rest -debug=masternode,mnpayments,governance -txindex=1 -reindex".format(PASTELD_DIR, EXTRACT_PATH_FULL),
+"{}/pasteld -datadir={}/node16 -daemon -keypool=1 -discover=0 -rest -debug=masternode,mnpayments,governance -txindex=1 -reindex".format(PASTELD_DIR, EXTRACT_PATH_FULL),
+"{}/pasteld -datadir={}/node17 -daemon -keypool=1 -discover=0 -rest -debug=masternode,mnpayments,governance -txindex=1 -reindex".format(PASTELD_DIR, EXTRACT_PATH_FULL),
+"{}/pasteld -datadir={}/node18 -daemon -keypool=1 -discover=0 -rest -debug=masternode,mnpayments,governance -txindex=1 -reindex".format(PASTELD_DIR, EXTRACT_PATH_FULL)
 ]
 
 def extractArchive():

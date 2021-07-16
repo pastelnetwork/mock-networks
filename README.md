@@ -6,3 +6,8 @@ Usage:
 3. Run start.py
 
 Voilá, you regtest chain is running and can connect to nodes via pastel-cli.
+
+To kill ALL mock nodes use
+```
+ps -afx | grep pasteld | grep mock-data | awk '{print $1}' | xargs -r kill -9
+```
