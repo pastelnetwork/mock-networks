@@ -7,7 +7,7 @@ Usage:
 
 Voilá, you regtest chain is running and can connect to nodes via pastel-cli.
 
-After start all masternodes will be in the disabled state, To start run the following command for mn0 to mn11:
+After start, all masternodes will be in the disabled state, To start run the following command for mn0 to mn11:
 ```
 <your path>\pastel-cli --datadir=unzipped/node14 masternode start-alias mn0
 <your path>\pastel-cli --datadir=unzipped/node14 masternode start-alias mn1
