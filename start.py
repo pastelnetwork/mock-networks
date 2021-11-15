@@ -2,7 +2,7 @@ import os, tarfile, subprocess, time
 
 
 #USER DEFINED
-PASTELD_DIR = '/home/alexey/work/Pastel/pastel/src'
+PASTELD_DIR = '/home/bacnh/dev/tools/pastel'
 # PASTELD_DIR = './'
 
 #No need to modify
